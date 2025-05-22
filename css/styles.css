@@ -1,0 +1,122 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../pictures/School2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: auto;
+
+}
+
+.login-box {
+    border: 3px solid rgb(255, 255, 255);
+    width: 500px;
+    box-shadow: #343a40 0px 2px 4px;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    background-color: #f8f9fa;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-top: 20px;
+
+}
+
+button {
+    padding: 1em;
+    background: #246e02;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1em;
+    width: 300px;
+    cursor: pointer;
+}
+
+button:active {
+    background: #1e5a02;
+    -webkit-box-shadow: inset 0px 0px 5px #1e5a02;
+    -moz-box-shadow: inset 0px 0px 5px #1e5a02;
+    box-shadow: inset 0px 0px 5px #1e5a02;
+    outline: none;
+}
+
+.form-label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #343a40;
+    padding: 10px;
+}
+
+.form-control {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #343a40;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #343a40;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* svart med 50% genomskinlighet */
+    z-index: -1;
+    /* Lägg den bakom innehållet */
+}
+.wrong-login {
+    display: none; 
+    color: red;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .login-box {
+        width: 80%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Bedömningar</title>
+    <link rel="stylesheet" href="css/style_table.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sql.js@1.6.2/dist/sql-wasm.js"></script>
+    <script type="module" src="scripts/elevscript.js"></script>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Bedömningar</h1>
+        <p class="description">Här ser du dina bedömningar samt eventuella kommentarer</p>
+    </header>
+
+    <!-- <div id="grading-section">
+        <div class="subject-selection">
+
+            <label for="student-select">Välj Studerande:</label>
+            <select id="student-select">
+                <option value="">-- Välj Studerande --</option>
+                <option value="S001">Elev 1</option>
+                <option value="S002">Elev 2</option>
+                <option value="S003">Elev 3</option>
+                <option value="S004">Elev 4</option>
+            </select>
+
+             <label for="course-select">Välj kurs:</label>
+            <select id="course-select">
+                <option value="">-- Välj kurs --</option>
+                <option value="BD">Bild (Bd)</option>
+                <option value="BI">Biologi (Bi)</option>
+                <option value="EN">Engelska (En)</option>
+                <option value="FY">Fysik (Fy)</option>
+                <option value="GE">Geografi (Ge)</option>
+                <option value="HK">Hem och konsumentkunskap (Hk)</option>
+                <option value="HI">Historia (Hi)</option>
+                <option value="ID">Idrott och hälsa (Id)</option>
+                <option value="KE">Kemi (Ke)</option>
+                <option value="MA">Matematik (Ma)</option>
+                <option value="MS">Moderna språk (Ms)</option>
+                <option value="MU">Musik (Mu)</option>
+                <option value="RE">Religion (Re)</option>
+                <option value="SH">Samhällskunskap (Sh)</option>
+                <option value="SL">Slöjd (Sl)</option>
+                <option value="SV">Svenska (Sv)</option>
+                <option value="TK">Teknik (Tk)</option>
+            </select>
+
+            <label for="grade-select">Välj betyg:</label>
+            <select id="grade-select">
+                <option value="">-- Välj betyg --</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+
+
+
+
+
+             <button onclick="addAssessmentRow()">Lägg till bedömning</button>
+
+        </div> -->
+
+
+        <table id="grading-table">
+            <thead>
+                <tr>
+                    <th>Lärare</th>
+                    <th>Kurs</th>
+                    <th>Betyg</th>
+                    <th>Kommentar</th>
+                    <th>Datum</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Här kommer bedömningsraderna att läggas til -->
+            </tbody>
+        </table>
+
+        <!-- <div class="save-button-container">
+            <button class="save-button" onclick="saveAssessments()">Spara alla bedömningar</button>
+        </div> -->
+    </div>
+
+
+</body>
+
+</html>
