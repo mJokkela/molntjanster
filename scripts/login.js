@@ -28,7 +28,7 @@ loginButton.addEventListener("click", (e) => {
     const isElev = elev.some(u => u.email === email && u.password === password);
 
     if (isLarare) {
-        window.location.href = "./index.html";
+        window.location.href = "./hem.html";
     } else if (isElev) {
         const elevData = elev.find(u => u.email === email);
         window.location.href = `./elevindex.html?studentID=${elevData.id}`;
